@@ -19,6 +19,8 @@ def sigmoid(x, out=None):
 def sigmoid_d(x, out=None):
     return unary(elementwise.sigmoid_d_op, x, out)
 
+def tanh(x, out=None):
+    return unary(elementwise.tanh_op, x, out)
 
 def tanh_d(x, out=None):
     return unary(elementwise.tanh_d_op, x, out)
